@@ -10,7 +10,6 @@ import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.Watchdog;
 import team2340.TritionDefinitions;
 import edu.wpi.first.wpilibj.can.CANTimeoutException;
-import edu.wpi.first.wpilibj.networktables.NetworkTableKeyNotDefined;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import toolkit.CANJaguarFactory;
 import toolkit.Direction;
@@ -38,10 +37,10 @@ public class TritonDrive {
         i = SmartDashboard.getDouble(RobotDefinitions.DRIVE_INTEGRAL, RobotDefinitions.DRIVE_I_INITIAL);
         d = SmartDashboard.getDouble(RobotDefinitions.DRIVE_DIFFERENTIAL, RobotDefinitions.DRIVE_D_INITIAL);
         */
-        frontLeft = initializeCANJag(TritionDefinitions.FRONTLEFT_DRIVE_JAG_ID, TritionDefinitions.CPR250);
-        frontRight = initializeCANJag(TritionDefinitions.FRONTRIGHT_DRIVE_JAG_ID, TritionDefinitions.CPR250);
-        backLeft = initializeCANJag(TritionDefinitions.BACKLEFT_DRIVE_JAG_ID, TritionDefinitions.CPR360);
-        backRight = initializeCANJag(TritionDefinitions.BACKRIGHT_DRIVE_JAG_ID, TritionDefinitions.CPR360);
+        frontLeft = initializeCANJag(TritionDefinitions.TRITION_FRONTLEFT_DRIVE_JAG_ID, TritionDefinitions.CPR250);
+        frontRight = initializeCANJag(TritionDefinitions.TRITION_FRONTRIGHT_DRIVE_JAG_ID, TritionDefinitions.CPR250);
+        backLeft = initializeCANJag(TritionDefinitions.TRITION_BACKLEFT_DRIVE_JAG_ID, TritionDefinitions.CPR360);
+        backRight = initializeCANJag(TritionDefinitions.TRITION_BACKRIGHT_DRIVE_JAG_ID, TritionDefinitions.CPR360);
     }
 
     synchronized public void directionalDrive(Direction direction, Direction dPad) throws CANTimeoutException {

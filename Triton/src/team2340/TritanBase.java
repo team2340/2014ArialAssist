@@ -12,13 +12,13 @@ import toolkit.Logger;
  *
  * @author Team 2340
  */
-public abstract class TitanBase implements Runnable {
+public abstract class TritanBase implements Runnable {
     
-    Thread runner;
-    Logger logger;
-    String name;
+    public Thread runner;
+    public Logger logger;
+    public String name;
     
-    TitanBase(String name) {
+    public TritanBase(String name) {
         this.name = name;
         logger = Logger.getInstance();
     }

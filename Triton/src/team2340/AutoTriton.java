@@ -8,7 +8,7 @@ package team2340;
  *
  * @author NAZareX Robotics
  */
-public class AutoTriton extends TitanBase {
+public class AutoTriton extends TritanBase {
     
     //DoryShooter shooter;
     

@@ -16,12 +16,20 @@ public class TritionDefinitions {
     public final static String TRITON_SHOOTER_NAME = "Triton Shooter";
       
     public final static String TRITON_BALL_COLLECTION = "Triton Ball Collection";
+    public final static String BOX_CONTROLLER_NAME = "Triton Box Control";
+    
+    public final static String TRITION_ACQUISITION_NAME = "Trition Acquisition";
 
     public final static String TRITON_CAMERA = "Triton Camera";
     public final static String TRITON_SONIC_SENSOR = "Triton Sonic Sensor";
     public final static String TRITON_GYRO_SENSOR = "Triton Gyro Sensor";
-
     public final static String TRITON_AUTO_MODE = "Triton Autonomous Mode";
+    
+    public final static String BOX_FULL_UP = "FULLUP";
+    public final static String BOX_FULL_DOWN = "FULLDOWN";
+    public final static String BOX_PARTIAL_UP = "PARTIALUP";
+    public final static String BOX_PARTIAL_DOWN = "PARTIALDOWN";
+    
     
     // smart dashboard names
     public static final String DRIVE_DIFFERENTIAL = "Drive PID: Differential";
@@ -71,6 +79,8 @@ public class TritionDefinitions {
     
     public static final String CAMERA_NUM_RECTANGLES_FOUND = "Num rectangles found";
     
+    public static final String BOX_SHOOTER_CONTROLLER_NAME = "Box Shooter Controller Name";
+    
     // smart dashboard initial values
     public static final double DRIVE_P_INITIAL = 1.0;
     public static final double DRIVE_I_INITIAL = 0.01;
@@ -108,17 +118,17 @@ public class TritionDefinitions {
     public static final double IP_PERCENT_OF_IMAGE_HIGH_INITIAL = 18.2;
     
     // can jag ids
-    public final static int FRONTRIGHT_DRIVE_JAG_ID = 5;
-    public final static int FRONTLEFT_DRIVE_JAG_ID = 4;
-    public final static int BACKRIGHT_DRIVE_JAG_ID = 3;
-    public final static int BACKLEFT_DRIVE_JAG_ID = 2;
-    public final static int SHOOTER_RIGHTWHEEL_JAG_ID = 11;
-    public final static int SHOOTER_LEFTWHEEL_JAG_ID = 12;
-    public final static int SHOOTER_FLIPPER_JAG_ID = 13;
-    public final static int TURRET_JAG_ID = 7;
-    public final static int TOP_ANEMONE_JAG_ID = 9;
-    public final static int BOTTOM_ANEMONE_JAG_ID = 8;
-    public final static int ARM_JAG_ID = 6;
+    public final static int TRITION_FRONTRIGHT_DRIVE_JAG_ID = 5;
+    public final static int TRITION_FRONTLEFT_DRIVE_JAG_ID = 4;
+    public final static int TRITION_BACKRIGHT_DRIVE_JAG_ID = 3;
+    public final static int TRITION_BACKLEFT_DRIVE_JAG_ID = 2;
+    // TODO ID's need to be defined for additional motors.
+    public final static int TRITION_ACQUISITION_SPINNER_ID = 0;
+    public final static int TRITION_ACQUISITION_ARM_ID = 0;
+    public final static int TRITION_BOX_MOTOR_ID = 0;
+    public final static int TRITION_TOP_FLY_WHEEL_ID = 0;
+    public final static int TRITION_BOTTOM_FLY_WHEEL_ID = 0;
+    
     
     // analog channels
     public final static int SONIC_SENSOR_ANALOG_CHANNEL = 2;
@@ -149,6 +159,19 @@ public class TritionDefinitions {
     public final static double SHOOTER_HEIGHT_IN = 20.0; // FIX ME
     public final static double SHOOTER_WHEEL_DIAMETER_IN = 6.0;
     public final static double SHOOTER_CIRCUMFERENCE_IN = Math.PI * SHOOTER_WHEEL_DIAMETER_IN;
+    public static double BOX_UP_SPEED = 0.25;
+    public static double BOX_DOWN_SPEED = 0.25;
+    public static double BOX_STOP = 0.0;
+    public static long BOX_PARTIAL_MOVE_SLEEP_TIME = 2;
+    public static long ACQUISITION_ARM_DELAY_TIME = 2;
+    public static double ARM_STOP = 0.0;
+    public static double ACQUISITION_ARM_OUT_SPEED = 0.25;
+    public static double ACQUISITION_ARM_IN_SPEED = -0.25;
+    public static long SHOOTER_SLEEP_TIME = 10;
+    public static double TOP_FLYWHEEL_SPEED = 0.75;
+    public static double BOTTOM_FLYWHEEL_SPEED = -0.75;
+    public static double FLY_WHEEL_STOP = 0.0;
+   
     
     
 }

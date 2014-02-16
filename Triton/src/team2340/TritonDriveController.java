@@ -10,7 +10,6 @@ import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.Watchdog;
 import team2340.TritionDefinitions;
 import edu.wpi.first.wpilibj.can.CANTimeoutException;
-import edu.wpi.first.wpilibj.networktables.NetworkTableKeyNotDefined;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import toolkit.Direction;
 import toolkit.LogitechF310;
@@ -19,7 +18,7 @@ import toolkit.LogitechF310;
  *
  * @author Team 2340
  */
-public class TritonDriveController extends TitanBase {
+public class TritonDriveController extends TritanBase {
 
     LogitechF310 controller;
     TritonDrive driver;
